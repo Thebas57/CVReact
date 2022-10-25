@@ -1,0 +1,64 @@
+.navbar {
+  height: 100%;
+  background-color: $color-4;
+  border-radius: 20px;
+  padding: 10px;
+  .header-nav {
+    display: flex;
+    flex-direction: column;
+    img {
+      margin: auto;
+      width: 80%;
+      border: 10px solid $color-2;
+      border-radius: 50%;
+    }
+    span {
+      text-align: center;
+      font-size: 1.4rem;
+    }
+  }
+  .navigation {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      li {
+        cursor: pointer;
+        padding-left: 20px;
+        margin: 10px 0px 20px 0px;
+        transition: all 0.2s ease-out;
+        font-size: 1rem;
+        position: relative;
+        span {
+          padding-left: 20px;
+        }
+        &:hover {
+          color: $color-1;
+          transform: translateX(10px);
+          transition: all 0.2s ease-out;
+        }
+      }
+    }
+  }
+  .reseau {
+    ul {
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      li {
+        font-size: 1.5rem;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
+        color: $color-4;
+        background-color: $color-2;
+        width: 22%;
+        padding-top: 5px;
+      }
+    }
+  }
+  .footer-nav{
+    text-align: center;
+  }
+}

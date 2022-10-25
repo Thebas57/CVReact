@@ -1,5 +1,11 @@
+import Routes from "./components/Routes";
+
 function App() {
-  return <div className="App">coucou</div>;
+  return (
+    <div className="App">
+      <Routes />
+    </div>
+  );
 }
 
 export default App;
