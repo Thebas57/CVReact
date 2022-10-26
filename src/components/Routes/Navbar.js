@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="header-nav">
-        <img src="./img/user.svg" alt="img-moi" />
+        <img src="./img/moi.webp" alt="img-moi" />
         <span>Théo HELF</span>
       </div>
       <div className="navigation">

@@ -13,4 +13,7 @@ $color-5:#424340;
     margin: 0 auto;
     font: italic small-caps bold 16px/2 cursive;
     color: $color-2;
+    @media screen  and (max-width:1200px){
+        grid-template-columns: 1fr;
+    }
 }
