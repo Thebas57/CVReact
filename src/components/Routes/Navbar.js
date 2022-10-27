@@ -1,5 +1,13 @@
 import React from "react";
-import { FaHome , FaStackOverflow, FaIdCard, FaMailBulk, FaLinkedin, FaGithubSquare} from "react-icons/fa";
+import {
+  FaHome,
+  FaStackOverflow,
+  FaIdCard,
+  FaMailBulk,
+  FaLinkedin,
+  FaGithubSquare,
+} from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -10,16 +18,36 @@ const Navbar = () => {
       </div>
       <div className="navigation">
         <ul>
-          <li><FaHome /><span>Accueil</span></li>
-          <li><FaStackOverflow /><span>Compétences</span></li>
-          <li><FaIdCard /><span>Portfolio</span></li>
-          <li><FaMailBulk /><span>Contact</span></li>
+          <NavLink exact to="/" className="navlink" activeClassName="activ-navlink">
+            <li>
+              <FaHome />
+              <span>Accueil</span>
+            </li>
+          </NavLink>
+          <NavLink exact to="skills" className="navlink" activeClassName="activ-navlink">
+            <li>
+              <FaStackOverflow />
+              <span>Compétences</span>
+            </li>
+          </NavLink>
+          <li>
+            <FaIdCard />
+            <span>Portfolio</span>
+          </li>
+          <li>
+            <FaMailBulk />
+            <span>Contact</span>
+          </li>
         </ul>
       </div>
       <div className="reseau">
         <ul>
-          <li><FaLinkedin /></li>
-          <li><FaGithubSquare /></li>
+          <li>
+            <FaLinkedin />
+          </li>
+          <li>
+            <FaGithubSquare />
+          </li>
         </ul>
       </div>
       <div className="footer-nav">From me - 2022</div>
