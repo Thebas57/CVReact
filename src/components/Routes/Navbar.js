@@ -18,22 +18,39 @@ const Navbar = () => {
       </div>
       <div className="navigation">
         <ul>
-          <NavLink exact to="/" className="navlink" activeClassName="activ-navlink">
+          <NavLink
+            exact
+            to="/"
+            className="navlink"
+            activeClassName="activ-navlink"
+          >
             <li>
               <FaHome />
               <span>Accueil</span>
             </li>
           </NavLink>
-          <NavLink exact to="skills" className="navlink" activeClassName="activ-navlink">
+          <NavLink
+            exact
+            to="skills"
+            className="navlink"
+            activeClassName="activ-navlink"
+          >
             <li>
               <FaStackOverflow />
               <span>Compétences</span>
             </li>
           </NavLink>
-          <li>
-            <FaIdCard />
-            <span>Portfolio</span>
-          </li>
+          <NavLink
+            exact
+            to="projects"
+            className="navlink"
+            activeClassName="activ-navlink"
+          >
+            <li>
+              <FaIdCard />
+              <span>Portfolio</span>
+            </li>
+          </NavLink>
           <li>
             <FaMailBulk />
             <span>Contact</span>

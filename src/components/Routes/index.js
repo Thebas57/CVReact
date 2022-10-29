@@ -6,6 +6,7 @@ import {
     Redirect,
   } from "react-router-dom";
 import Portfolio from "../Portfolio";
+import Projects from "../Projects";
 import Skills from "../Skills";
 import Navbar from "./Navbar";
 
@@ -16,6 +17,7 @@ const index = () => {
       <Switch>
         <Route exact path="/" component={Portfolio} />
         <Route exact path="/skills" component={Skills} />
+        <Route exact path="/projects" component={Projects} />
         <Redirect to="/" />
       </Switch>
     </Router>
