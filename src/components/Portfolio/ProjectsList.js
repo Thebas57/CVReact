@@ -2,12 +2,14 @@ import React from "react";
 import { projectsData } from "../../data/projects";
 import Project from "./Project";
 
-const ProjectsList = () => {
+const ProjectsList = ({ prop }) => {
   return (
     <div className="projects-list">
-      {projectsData.map((project) => {
-        return <Project prop={project} />;
-      })}
+      {projectsData
+        .filter((project) => project.languages.includes(prop))
+        .map((project) => {
+          return <Project prop={project} />;
+        })}
     </div>
   );
 };

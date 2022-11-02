@@ -51,10 +51,17 @@ const Navbar = () => {
               <span>Portfolio</span>
             </li>
           </NavLink>
-          <li>
-            <FaMailBulk />
-            <span>Contact</span>
-          </li>
+          <NavLink
+            exact
+            to="contact"
+            className="navlink"
+            activeClassName="activ-navlink"
+          >
+            <li>
+              <FaMailBulk />
+              <span>Contact</span>
+            </li>
+          </NavLink>
         </ul>
       </div>
       <div className="reseau">

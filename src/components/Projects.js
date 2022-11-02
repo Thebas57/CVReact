@@ -23,7 +23,11 @@ const Projects = () => {
       <div className="projects-header">
         {filters.map((filter) => {
           return (
-            <div key={filter.id} className="filter" onClick={(e) => setIsFilter(filter.value)}>
+            <div
+              key={filter.id}
+              className="filter"
+              onClick={(e) => setIsFilter(filter.value)}
+            >
               <span
                 className={
                   isFilter === filter.value ? "circle selected" : "circle"
@@ -36,7 +40,7 @@ const Projects = () => {
           );
         })}
       </div>
-      <ProjectsList />
+      <ProjectsList prop={isFilter} />
     </div>
   );
 };
