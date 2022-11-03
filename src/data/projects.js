@@ -18,7 +18,7 @@ export const projectsData = [
     picture: "./img/projects/tech.png",
   },
   {
-    id: 2,
+    id: 3,
     name: "ezfzef",
     languages: ["javascript", "react"],
     languagesIcons: ["FaJsSquare", "FaReact"],
@@ -27,7 +27,7 @@ export const projectsData = [
     picture: "./img/projects/tech.png",
   },
   {
-    id: 2,
+    id: 4,
     name: "ezfzef",
     languages: ["javascript", "react"],
     languagesIcons: ["FaJsSquare", "FaReact"],
@@ -36,7 +36,7 @@ export const projectsData = [
     picture: "./img/projects/tech.png",
   },
   {
-    id: 2,
+    id: 5,
     name: "ezfzef",
     languages: ["javascript", "react"],
     languagesIcons: ["FaJsSquare", "FaReact"],
@@ -45,7 +45,7 @@ export const projectsData = [
     picture: "./img/projects/tech.png",
   },  
   {
-    id: 2,
+    id: 6,
     name: "ezfzef",
     languages: ["javascript", "react"],
     languagesIcons: ["FaJsSquare", "FaReact"],

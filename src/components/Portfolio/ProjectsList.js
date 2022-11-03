@@ -8,7 +8,7 @@ const ProjectsList = ({ prop }) => {
       {projectsData
         .filter((project) => project.languages.includes(prop))
         .map((project) => {
-          return <Project prop={project} />;
+          return <Project prop={project} key={project.id} />;
         })}
     </div>
   );

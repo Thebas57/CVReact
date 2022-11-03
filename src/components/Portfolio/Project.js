@@ -8,9 +8,9 @@ const Project = ({ prop }) => {
     <div className="project-card">
       <div className="project-header-logo">
         {prop.languages.map((language) => {
-          if (language === "javascript") return <FaJsSquare />;
-          else if (language === "css") return <FaCss3 />;
-          else if (language === "react") return <FaReact />;
+          if (language === "javascript") return <FaJsSquare key={language}/>;
+          else if (language === "css") return <FaCss3 key={language}/>;
+          else if (language === "react") return <FaReact key={language}/>;
           else return null;
         })}
       </div>

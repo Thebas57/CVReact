@@ -1,26 +1,71 @@
 .contact {
   height: 100%;
-  background-color: $color-4;
+  background: linear-gradient(
+    $color-2 0%,
+    $color-4 15%,
+    $color-4 85%,
+    $color-2 100%
+  );
   border-radius: 20px;
   padding: 10px;
+  .img-contact {
+    position: absolute;
+    top: 20px;
+    left: 450px;
+    width: 20%;
+    @media screen and (max-width: 1200px) {
+      left: 100px;
+      top: 180px;
+      width: 30%;
+    }
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+  }
   .contact-info {
+    @media screen and (max-width: 800px) {
+      width: 80%;
+    }
     margin: auto;
     margin-top: 120px;
     width: 40%;
     background-color: $color-2;
     color: $color-4;
     border-radius: 20px;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    row-gap: 15px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
     h3 {
-      margin-top: 0;
+      margin: 0;
       text-align: center;
+      font-size: 1.6rem;
+    }
+    hr {
+      border: none;
+      border-top: 3px double $color-4;
+      color: $color-4;
+      overflow: visible;
+      text-align: center;
+      height: 5px;
+      width: 80px;
     }
     .lineContact {
+      @media screen and (max-width: 800px) {
+        padding-left: 10px;
+      }
       padding-left: 50px;
-      span {
+      span,
+      a {
         padding-left: 50px;
+        @media screen and (max-width: 1200px) {
+          padding-left: 20px;
+        }
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
       }
     }
   }
@@ -29,11 +74,15 @@
     display: flex;
     text-align: center;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 100px;
     border-radius: 20px;
     flex-direction: row;
     padding: 10px;
     width: 50%;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    @media screen and (max-width: 800px) {
+      width: 80%;
+    }
     justify-content: space-around;
     .contact-reseau {
       background-color: $color-4;
@@ -42,6 +91,15 @@
       text-align: center;
       padding: 10px;
       border-radius: 25px;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+      border: 2px solid transparent;
+      min-width: 80px;
+      &:hover {
+        background-color: $color-2;
+        color: $color-4;
+        border: 2px solid $color-4;
+      }
       svg {
         margin: auto;
       }
