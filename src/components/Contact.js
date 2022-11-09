@@ -8,6 +8,12 @@ import {
 } from "react-icons/fa";
 
 const Contact = () => {
+  const handleReseau = (reseau) => {
+    if (reseau === "github") {
+      window.open("https://github.com/Thebas57", "_blank");
+    }
+  };
+
   return (
     <div className="contact">
       <div className="contact-info">
@@ -31,12 +37,19 @@ const Contact = () => {
           <span>Linkdled</span>
           <FaLinkedin />
         </div>
-        <div className="contact-reseau animate__animated animate__zoomIn">
+        <div
+          className="contact-reseau animate__animated animate__zoomIn"
+          onClick={(e) => handleReseau("github")}
+        >
           <span>Github</span>
           <FaGithubSquare />
         </div>
       </div>
-      <img src="./img/contact.svg" alt="contact" className=" animate__animated animate__zoomIn img-contact" />
+      <img
+        src="./img/contact.svg"
+        alt="contact"
+        className=" animate__animated animate__zoomIn img-contact"
+      />
     </div>
   );
 };

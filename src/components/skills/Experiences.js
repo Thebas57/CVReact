@@ -12,43 +12,45 @@ const Experiences = () => {
               <span>2020 - 2022</span>
             </div>
             <p>
-              Le lorem ipsum est, en imprimerie, une suite de mots sans
-              signification utilisée à titre provisoire pour calibrer une mise
-              en page, le texte définitif venant remplacer le faux-texte dès
-              qu'il est prêt ou que la mise en page est achevée. Généralement,
-              on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.
+              - Ajout / amélioration de fonctionnalités sur l’application
+              chrono-caisse. <br />
+              - Développement et conception de plusieurs interfaces d’une api
+              pour communiquer avec les différentes marketplaces. <br />-
+              Support client / debug.
             </p>
           </div>
         </div>
         <div className="xp-content">
           <div>
             <div className="xp-header">
-              <h4>CDI Chrono-Caisse - Nancy</h4>
-              <span>2020 - 2022</span>
+              <h4>Stage JUMO REGULATION - Nancy</h4>
+              <span>2018 - 2019</span>
             </div>
             <p>
-              Le lorem ipsum est, en imprimerie, une suite de mots sans
-              signification utilisée à titre provisoire pour calibrer une mise
-              en page, le texte définitif venant remplacer le faux-texte dès
-              qu'il est prêt ou que la mise en page est achevée. Généralement,
-              on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.
+              - Amélioration de leur site internet et Développement de bases
+              notes. <br />- Mise en ligne d'un catalogue stock sur leur site
             </p>
           </div>
         </div>
         <div className="xp-content">
           <div>
             <div className="xp-header">
-              <h4>CDI Chrono-Caisse - Nancy</h4>
-              <span>2020 - 2022</span>
+              <h4>Emploi saisonnier - Laquenexy</h4>
+              <span>Juillet 2018</span>
             </div>
+            <p>- Entretien des espaces verts et des bâtiments communaux</p>
           </div>
         </div>
         <div className="xp-content">
           <div>
             <div className="xp-header">
-              <h4>CDI Chrono-Caisse - Nancy</h4>
-              <span>2020 - 2022</span>
+              <h4>Projet innovant au lycée - Metz</h4>
+              <span>Mai 2017</span>
             </div>
+            <p>
+              - Création d’un skate connecté
+              <br />- Développement d’un site web
+            </p>
           </div>
         </div>
       </div>

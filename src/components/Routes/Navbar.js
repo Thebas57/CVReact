@@ -10,6 +10,12 @@ import {
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  //Fonction qui renvoie vers les reseaux
+  const handleReseau = (reseau) => {
+    if (reseau === "github") {
+      window.open("https://github.com/Thebas57", "_blank");
+    }
+  };
   return (
     <div className="navbar">
       <div className="header-nav">
@@ -69,7 +75,7 @@ const Navbar = () => {
           <li>
             <FaLinkedin />
           </li>
-          <li>
+          <li onClick={(e) => handleReseau("github")}>
             <FaGithubSquare />
           </li>
         </ul>

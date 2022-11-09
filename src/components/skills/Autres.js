@@ -23,7 +23,7 @@ const Autres = () => {
         <span>
           <FaRegCheckSquare />
 
-          <span className="autres-details">Github</span>
+          <span className="autres-details">Github / Gitlab</span>
         </span>
         <span>
           <FaRegCheckSquare />
@@ -33,15 +33,15 @@ const Autres = () => {
         <span>
           <FaRegCheckSquare />
 
-          <span className="autres-details">JE C PAS</span>
+          <span className="autres-details">Organisé</span>
         </span>
         <span>
           <FaRegCheckSquare />
-          <span className="autres-details">JE C PAS</span>
+          <span className="autres-details">Curieux</span>
         </span>
         <span>
           <FaRegCheckSquare />
-          <span className="autres-details">JE C PAS</span>
+          <span className="autres-details">Sympa comme tout 🤪​</span>
         </span>
       </div>
     </div>
