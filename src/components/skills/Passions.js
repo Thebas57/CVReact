@@ -23,12 +23,12 @@ const Passions = () => {
           <span className="passions-details">Skateboard</span>
         </span>
         <span>
-          <FaStackOverflow />
-          <span className="passions-details">Développement informatique</span>
-        </span>
-        <span>
           <FaItunesNote />
           <span className="passions-details">Musique</span>
+        </span>
+        <span>
+          <FaStackOverflow />
+          <span className="passions-details">Développement informatique</span>
         </span>
       </div>
     </div>

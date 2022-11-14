@@ -1,19 +1,22 @@
-$color-1: #B8CBD0;
-$color-2:#C9E3CC;
-$color-3:#B0B9A8;
-$color-4:#606C5A;
-$color-5:#424340;
+$color-1: #b8cbd0;
+$color-2: #c9e3cc;
+$color-3: #b0b9a8;
+$color-4: #606c5a;
+$color-5: #424340;
 
-.App{
-    width: 90%;
-    background-color: white;
-    display: grid;
-    grid-template-columns: 20% 80%;
-    gap: 10px;
-    margin: 0 auto;
-    font: italic small-caps bold 16px/2 cursive;
-    color: $color-2;
-    @media screen  and (max-width:1200px){
-        grid-template-columns: 1fr;
-    }
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+
+.App {
+  width: 90%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  gap: 10px;
+  margin: 0 auto;
+  font: italic small-caps bold 16px/2 cursive;
+  color: $color-2;
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: 1fr;
+    font:bold 16px/2 "Comfortaa";
+  }
 }

@@ -8,14 +8,17 @@ const Projects = () => {
     {
       id: 1,
       value: "javascript",
+      name : "Javascript"
     },
     {
       id: 2,
       value: "react",
+      name : "React"
     },
     {
       id: 3,
       value: "css",
+      name : "Css"
     },
   ];
   return (
@@ -34,7 +37,7 @@ const Projects = () => {
                 }
               ></span>
               <span key={filter.id} className="filter-info">
-                {filter.value}
+                {filter.name}
               </span>
             </div>
           );

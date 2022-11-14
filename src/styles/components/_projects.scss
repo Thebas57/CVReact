@@ -36,7 +36,7 @@
     border-radius: 20px;
     height: 92%;
     @media screen and (max-width: 1200px) {
-      height: auto;
+      height: 100%;
     }
     display: flex;
     justify-content: space-around;
@@ -46,7 +46,8 @@
       background-color: $color-2;
       width: 32%;
       @media screen and (max-width: 1200px) {
-        height: 250px;
+        height: auto !important;
+        max-height: inherit;
       }
       @media screen and (max-width: 800px) {
         width: 100%;
@@ -60,6 +61,7 @@
         text-align: center;
       }
       .project-header-titre {
+        text-align: center;
         color: $color-4;
         font-size: 20px;
       }
@@ -96,7 +98,7 @@
           position: relative;
           top: 25%;
           width: 600px;
-          @media screen and (max-width:800px){
+          @media screen and (max-width: 800px) {
             width: 60%;
           }
           margin: 0 auto;
@@ -119,6 +121,11 @@
           display: flex;
           justify-content: space-around;
           margin: 1rem 0;
+          @media screen and (max-width: 800px) {
+            flex-wrap: wrap;
+            margin-top: 0px;
+            padding-bottom: 10px;
+          }
         }
         h2 {
           text-align: left;

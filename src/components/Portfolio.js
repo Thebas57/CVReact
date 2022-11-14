@@ -23,7 +23,7 @@ const Portfolio = () => {
         </TrackVisibility>
       </div>
       <h3>Développeur full-stack</h3>
-      <a href="path_to_file" download="proposed_file_name">
+      <a href="./cv/cv.pdf" download="CV Théo HELF">
         Télécharger mon CV
       </a>
     </div>

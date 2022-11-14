@@ -8,9 +8,9 @@ const Project = ({ prop }) => {
     <div className="project-card">
       <div className="project-header-logo">
         {prop.languages.map((language) => {
-          if (language === "javascript") return <FaJsSquare key={language}/>;
-          else if (language === "css") return <FaCss3 key={language}/>;
-          else if (language === "react") return <FaReact key={language}/>;
+          if (language === "javascript") return <FaJsSquare key={language} />;
+          else if (language === "css") return <FaCss3 key={language} />;
+          else if (language === "react") return <FaReact key={language} />;
           else return null;
         })}
       </div>
@@ -18,7 +18,17 @@ const Project = ({ prop }) => {
       <div className="project-img">
         <img src={prop.picture} alt="projectimg" />
       </div>
-      <div className="project-footer" onClick={(e) => setShowInfo(!showInfo)}>
+      <div
+        className="project-footer"
+        onClick={(e) => {
+          setShowInfo(!showInfo);
+          window.top.window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+          });
+        }}
+      >
         <FaPlusCircle />
       </div>
       {showInfo && (
